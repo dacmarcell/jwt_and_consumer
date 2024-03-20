@@ -1,0 +1,11 @@
+@token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZm9vYmFyIiwiaWF0IjoxNzEwODg2MjM1LCJleHAiOjE3MTA4ODk4MzV9.SiAvFbHN3fGcCOa4juTZJSXNq-RSWamMxsItJRK3ZYc"
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "email":"marcell@gmail.com"
+}
+###
+GET http://localhost:3000/info
+Authorization: Bearer {{token}}
